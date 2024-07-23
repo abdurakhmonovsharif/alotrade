@@ -1,0 +1,16 @@
+{
+  "PORT": 8000,
+  "MONGO_URI": "mongodb://localhost/alotrade",
+  "ACCESS_TOKEN_KEY": "VeryStrongAccessTokenKey",
+  "REFRESH_TOKEN_KEY": "VeryStrongRefreshTokenKey",
+  "ACCESS_TOKEN_TIME": "10d",
+  "REFRESH_TOKEN_TIME": "30d",
+  "REFRESH_TOKEN_MS": "2592000000",
+  "base_url": "https://alotrade.uz",
+  "server_base_url": "http://localhost:8000/api",
+  "payment_merchant_key": "hB4iJArn?V5HDh&cFvH4KcC@%jaZd5TDTSok",
+  "botToken": "6050081421:AAH2i2c4cbl7AnTy933Gss33w61Bmxh0_JY",
+  "tgChannelIdForOrder": "-1001290622963",
+  "transaction_code": "09800001009000000",
+  "transaction_package_code": "1514295"
+}

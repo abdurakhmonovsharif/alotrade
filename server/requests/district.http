@@ -1,0 +1,81 @@
+### create a new District
+POST http://localhost:8080/api/address/district/create
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiYWRtaW4iLCJpZCI6IjYzNTNiNGNmZDllMjE2NmFiYzE1ZTUxNiIsImlhdCI6MTY2NjU4Nzk3MiwiZXhwIjoxNjY2NjMxMTcyfQ.GF9eNR2VvRGsSLsQ3nAniP-cJPR5xXsMt7yhoLt55Z8
+
+{
+  "name": "Nurota tumani",
+  "region": "6353b62ed9e2166abc15e541"
+}
+
+### update District
+PUT http://localhost:8080/api/address/district/update
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiYWRtaW4iLCJpZCI6IjYzNGViYTBjYjM2OTliZmFmZTQzNTkwYSIsImlhdCI6MTY2NjEwMzkxMSwiZXhwIjoxNjY2MTQ3MTExfQ.Fe-GVcAzpghnrEAtHu6we8Phm1G2Io0Uugtig9l8xK4
+
+{
+  "name": "Xatirchi",
+  "region": "634ec2d776fc5aa7998fb88c",
+  "_id": "634ec8c2c6860ff198c3e598"
+}
+
+### delete District
+DELETE http://localhost:8080/api/address/district/delete
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiYWRtaW4iLCJpZCI6IjYzNGViYTBjYjM2OTliZmFmZTQzNTkwYSIsImlhdCI6MTY2NjEwMzkxMSwiZXhwIjoxNjY2MTQ3MTExfQ.Fe-GVcAzpghnrEAtHu6we8Phm1G2Io0Uugtig9l8xK4
+
+{
+  "_id": "634ec8c2c6860ff198c3e598"
+}
+
+### get all DistrictsByRegion
+POST http://localhost:8080/api/address/district/getallbyregion
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiYWRtaW4iLCJpZCI6IjYzNGViYTBjYjM2OTliZmFmZTQzNTkwYSIsImlhdCI6MTY2NjEwMzkxMSwiZXhwIjoxNjY2MTQ3MTExfQ.Fe-GVcAzpghnrEAtHu6we8Phm1G2Io0Uugtig9l8xK4
+
+{
+  "region": "634ec2d776fc5aa7998fb88c"
+}
+
+### create all Districts
+POST http://localhost:8080/api/address/district/createall
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiYWRtaW4iLCJpZCI6IjYzNTNiNGNmZDllMjE2NmFiYzE1ZTUxNiIsImlhdCI6MTY2Njg0MjE4NywiZXhwIjoxNjY2ODg1Mzg3fQ.nBIRANfvVGW0L0fVG5bFE8b5ZQh2WIjto78xRwl9yfg
+
+{
+  "districts": [
+    {
+      "name": "Nurota tumani"
+    },
+    {
+      "name": "Xatirchi"
+    },
+    {
+      "name": "Qiziltepa"
+    },
+    {
+      "name": "Navbaxor"
+    },
+    {
+      "name": "Karmana"
+    },
+    {
+      "name": "Konimex"
+    },
+    {
+      "name": "Tomdi"
+    },
+    {
+      "name": "Zarafshon"
+    },
+    {
+      "name": "Uchquduq"
+    }
+  ],
+  "region": "6353b62ed9e2166abc15e541"
+}

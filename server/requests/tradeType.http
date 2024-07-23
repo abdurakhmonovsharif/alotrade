@@ -1,0 +1,15 @@
+### create a new tradeType
+POST http://localhost:8080/api/trade/tradetype/create
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiYWRtaW4iLCJpZCI6IjYzNTNiNGNmZDllMjE2NmFiYzE1ZTUxNiIsImlhdCI6MTY2NjQzMDI1NywiZXhwIjoxNjY2NDczNDU3fQ.FT4QJevdIumcUd8zOjNqT4kP6_rp0GdvcbaxCxCWLj4
+
+{
+  "name": "Xizmat ko'rsatish"
+}
+
+### get all tradeTypes
+GET http://localhost:8080/api/trade/tradetype/get
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNTEwMDliNTJiYzFmOGEzNjBjYWJkNCIsImlhdCI6MTY2NjMzODc3NX0.Unvx1ZSF7VjpvoTiQriD8RR76kE2Ahuc4R1CFclqO1M

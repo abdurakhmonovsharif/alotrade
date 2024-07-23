@@ -1,0 +1,38 @@
+
+### create a new Region
+POST http://localhost:8080/api/address/region/create
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNTNiOWM4MjY2MmNjMzg2YTNkMzA1NSIsImlhdCI6MTY2ODQzNDkwMH0.KDQk8BG0KzlxdkD9IjzB8DqV-TAEEPZUeb0YS7QTSPc
+
+{
+  "name": "Navoiy viloyati"
+}
+
+### update Region
+PUT http://localhost:8080/api/address/region/update
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiYWRtaW4iLCJpZCI6IjYzNGViYTBjYjM2OTliZmFmZTQzNTkwYSIsImlhdCI6MTY2NjEwMzkxMSwiZXhwIjoxNjY2MTQ3MTExfQ.Fe-GVcAzpghnrEAtHu6we8Phm1G2Io0Uugtig9l8xK4
+
+{
+  "name": "Navoi",
+  "_id": "634ebe8dcba05372abd00d12"
+}
+
+### delete Region
+DELETE http://localhost:8080/api/address/region/delete
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiYWRtaW4iLCJpZCI6IjYzNGViYTBjYjM2OTliZmFmZTQzNTkwYSIsImlhdCI6MTY2NjEwMzkxMSwiZXhwIjoxNjY2MTQ3MTExfQ.Fe-GVcAzpghnrEAtHu6we8Phm1G2Io0Uugtig9l8xK4
+
+{
+  "_id": "634ebe8dcba05372abd00d12"
+}
+
+### get all Regions
+GET http://localhost:8080/api/address/region/getall
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNGY2ZWE3Y2QzZTIyNTNmZTA3MzdkZCIsImlhdCI6MTY2NjE1MDA1NX0.ftMPc7sEHAYuO_G0UQXS5_q0vco3Lvny9PvmuTDUmRc
+

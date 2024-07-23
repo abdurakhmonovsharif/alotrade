@@ -1,0 +1,41 @@
+### create  Subcategory
+POST http://localhost:8080/api/category/subcategory/create
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiYWRtaW4iLCJpZCI6IjYzNTNiNGNmZDllMjE2NmFiYzE1ZTUxNiIsImlhdCI6MTY2NjQzMDI1NywiZXhwIjoxNjY2NDczNDU3fQ.FT4QJevdIumcUd8zOjNqT4kP6_rp0GdvcbaxCxCWLj4
+
+{
+  "name": "Yengil avtomobil",
+  "category": "6353b7075f02ad933b54d588"
+}
+
+### get Subcategories by category
+POST http://localhost:8080/api/category/subcategories/getbycategory
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNGZjZDAzOWE2YmNhMDhiNDNkYjFlNyIsImlhdCI6MTY2NjIzNDg0MX0.ZYGI21umV4C6j43ixu1Jj3NFtWz1EL9zAS3142HwxLg
+
+{
+  "category": "634fdf98caba8aa6d10b7ae5"
+}
+
+### create a new Subcategories
+POST http://localhost:8080/api/category/subcategories/create
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiYWRtaW4iLCJpZCI6IjYzNTNiNGNmZDllMjE2NmFiYzE1ZTUxNiIsImlhdCI6MTY2Njg0MjE4NywiZXhwIjoxNjY2ODg1Mzg3fQ.nBIRANfvVGW0L0fVG5bFE8b5ZQh2WIjto78xRwl9yfg
+
+{ "subcategories":
+[ { "name": "Erkaklar kiyimlari" },
+  { "name": "Ayollar kiyimlari" },
+  { "name": "Bolalar kiyimlari" },
+  { "name": "Maxsus kiyimlar" },
+  { "name": "Erkaklar oyoq kiyimi" },
+  { "name": "Ayollar oyoq kiyimi" },
+  { "name": "Bolalar oyoq kiyimi" },
+  { "name": "Maxsus oyoq kiyimlar" },
+  { "name": "To’qilgan kiyimlar" },
+  { "name": "Trikotaj maxsulotlari " },
+  { "name": "Tekstil maxsulotlari" },
+  { "name": "Matolar" }],
+  "category":"6353b7075f02ad933b54d588" }

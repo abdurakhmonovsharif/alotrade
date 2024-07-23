@@ -1,0 +1,40 @@
+### create a new Admin user
+POST http://localhost:8080/api/admin/create
+Accept: application/json
+Content-Type: application/json
+
+{
+  "phone": "admin",
+  "password": "admin"
+}
+
+### login admin user
+POST http://localhost:8080/api/admin/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "phone": "admin",
+  "password": "admin"
+}
+
+### update admin user
+PUT http://localhost:8080/api/admin/update
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiYWRtaW4iLCJpZCI6IjYzNGViYTBjYjM2OTliZmFmZTQzNTkwYSIsImlhdCI6MTY2NjEwMzkxMSwiZXhwIjoxNjY2MTQ3MTExfQ.Fe-GVcAzpghnrEAtHu6we8Phm1G2Io0Uugtig9l8xK4
+
+{
+  "phone": "admin",
+  "password": "admin"
+}
+
+### delete admin user
+DELETE http://localhost:8080/api/admin/delete
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiYWRtaW4iLCJpZCI6IjYzNGViYTBjYjM2OTliZmFmZTQzNTkwYSIsImlhdCI6MTY2NjEwMzkxMSwiZXhwIjoxNjY2MTQ3MTExfQ.Fe-GVcAzpghnrEAtHu6we8Phm1G2Io0Uugtig9l8xK4
+
+{
+  "phone": "admin"
+}

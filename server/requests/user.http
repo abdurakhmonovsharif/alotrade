@@ -1,0 +1,54 @@
+### create a new Main
+POST http://localhost:8080/api/user/signup
+Accept: application/json
+Content-Type: application/json
+
+{
+    "firstname": "John",
+    "lastname": "Doe",
+    "phone": "+998973666223",
+    "password": "123456",
+    "region": "634ec2d776fc5aa7998fb88c",
+    "district": "634ec8c2c6860ff198c3e598",
+  "email": "test"
+}
+
+### update Main
+PUT http://localhost:8080/api/user/update
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNGY2ZWE3Y2QzZTIyNTNmZTA3MzdkZCIsImlhdCI6MTY2NjE1MDA1NX0.ftMPc7sEHAYuO_G0UQXS5_q0vco3Lvny9PvmuTDUmRc
+
+{
+  "_id": "634f6ea7cd3e2253fe0737dd",
+  "firstname": "John",
+  "lastname": "Doe",
+  "phone": "+998973666223",
+  "password": "123456",
+  "region": "634ec2d776fc5aa7998fb88c",
+  "district": "634ec8c2c6860ff198c3e598",
+  "email": "test"
+}
+
+### get UserById
+POST http://localhost:8080/api/user/getuserbyid
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNGY2ZWE3Y2QzZTIyNTNmZTA3MzdkZCIsImlhdCI6MTY2NjE1MDA1NX0.ftMPc7sEHAYuO_G0UQXS5_q0vco3Lvny9PvmuTDUmRc
+
+### delete UserById
+DELETE http://localhost:8080/api/user/delete
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNGY2ZWE3Y2QzZTIyNTNmZTA3MzdkZCIsImlhdCI6MTY2NjE1MDA1NX0.ftMPc7sEHAYuO_G0UQXS5_q0vco3Lvny9PvmuTDUmRc
+
+
+### signin Main
+POST http://localhost:8080/api/user/signin
+Accept: application/json
+Content-Type: application/json
+
+{
+  "phone": "+998973666221",
+  "password":"123456"
+}

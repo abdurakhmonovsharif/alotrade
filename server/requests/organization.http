@@ -1,0 +1,8 @@
+### create a new Organization
+POST http://localhost:8080/api/user/organization/create
+Accept: application/json
+Content-Type: application/json
+
+{
+
+}

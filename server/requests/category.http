@@ -1,0 +1,45 @@
+### create a new Category
+POST http://localhost:8080/api/category/create
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoiYWRtaW4iLCJpZCI6IjYzNTNiNGNmZDllMjE2NmFiYzE1ZTUxNiIsImlhdCI6MTY2NjQzMDI1NywiZXhwIjoxNjY2NDczNDU3fQ.FT4QJevdIumcUd8zOjNqT4kP6_rp0GdvcbaxCxCWLj4
+
+{
+  "name": "Avto"
+}
+
+### update Category
+PUT http://localhost:8080/api/category/update
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNGZjZDAzOWE2YmNhMDhiNDNkYjFlNyIsImlhdCI6MTY2NjE3NzM0OX0.IgrNqw0u7JJaZyKa_BLdKHsTE0net-LYVcoMjajX62g
+
+{
+  "name": "Kompyuterlar",
+  "_id": "634fd98c24449d6ab99ea1e4"
+}
+
+
+### delete Category
+ DELETE http://localhost:8080/api/category/delete
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNGZjZDAzOWE2YmNhMDhiNDNkYjFlNyIsImlhdCI6MTY2NjE3NzM0OX0.IgrNqw0u7JJaZyKa_BLdKHsTE0net-LYVcoMjajX62g
+
+{
+  "_id": "634fd98c24449d6ab99ea1e4"
+}
+
+
+### get category
+GET http://localhost:8080/api/category/get
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNGZjZDAzOWE2YmNhMDhiNDNkYjFlNyIsImlhdCI6MTY2NjE3NzM0OX0.IgrNqw0u7JJaZyKa_BLdKHsTE0net-LYVcoMjajX62g
+
+### get categories with sub-categories
+GET http://localhost:8080/api/category/getwithsubcategories
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNGZjZDAzOWE2YmNhMDhiNDNkYjFlNyIsImlhdCI6MTY2NjE3NzM0OX0.IgrNqw0u7JJaZyKa_BLdKHsTE0net-LYVcoMjajX62g
+
